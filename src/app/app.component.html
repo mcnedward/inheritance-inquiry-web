@@ -1,20 +1,53 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="header">
+  <h1>Inheritance Inquiry</h1>
+  <h2>An open-source application for analyzing Java projects using established software code metrics</h2>
+  <h3><a href="https://github.com/mcnedward/inheritance-inquiry">View the app code</a></h3> |
+  <h3><a href="https://github.com/mcnedward/inheritance-inquiry-lib">View the library code</a></h3>
+</header>
 
+<main>
+  <div class="main-info">
+    <img class="ii-image" id="iiMainImage" src="../assets/ii.jpg" alt="Inheritance Inquiry" />
+    <ul>
+      <li>Analyze a local project, or download one from GitHub.</li>
+      <li>Inspects your code to find Depth of Inheritance Tree, Number of Children, Weighted Method Count, and the full inheritance hierarchies of your classes.</li>
+      <li>Generate graphs to display information on the hierarchy structures of classes in your code.</li>
+      <li>Export graphs or Excel ready sheets containing information gathered from code metrics.</li>
+    </ul>
+  </div>
+
+  <div class="button-container">
+    <a class="btn" href="https://s3.amazonaws.com/mcnedward-content/ii/InheritanceInquiry.zip">Download the app!</a>
+    <a class="btn" href="https://s3.amazonaws.com/mcnedward-content/ii/InheritanceInquiryLib.zip">Download the library!</a>
+  </div>
+
+  <p>
+    The application is built using a library containing services that are used to parse your code, analyze the project using the code metrics, and finally produce the graphs or Excel sheets. You can find both the full app and the library on GitHub,
+    where you can download the source for either. With the library, you can use the builders and services to further customize the ways you analyze your projects.
+  </p>
+
+  <div class="ii-images-container">
+    <div class="ii-image-container">
+      <img class="ii-image" src="../assets/blueDit.jpg" alt="DIT" />
+      <div>DIT</div>
+    </div>
+    <div class="ii-image-container">
+      <img class="ii-image" src="../assets/greenHierarchy.jpg" alt="Hierarchy 1" />
+      <div>Hierarchy</div>
+    </div>
+    <div class="ii-image-container">
+      <img class="ii-image" src="../assets/orangeHierarchy.jpg" alt="Hierarchy 2" />
+      <div>Hierarchy</div>
+    </div>
+    <div class="ii-image-container">
+      <img class="ii-image" src="../assets/purpleNoc.jpg" alt="NOC" />
+      <div>NOC</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span><a href="https://github.com/mcnedward/angualert"><img src="../assets/github.png" alt="Github" /></a></span>
+  <span><a href="https://www.linkedin.com/in/mcnedward"><img src="../assets/linkedin.png" alt="LinkedIn" /></a></span>
+  <label><a href="https://edwardmcnealy.com">&copy; {{copyrightDate}} Edward McNealy</a></label>
+</footer>
